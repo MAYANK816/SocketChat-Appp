@@ -49,7 +49,7 @@ class Client:
         self.win.mainloop()
     
     def write(self):
-        message=f"{self.nickname} :{self.input_area.get('1.0','end')}"   
+        message=f"{self.nickname} ::{self.input_area.get('1.0','end')}"   
         self.sock.send(message.encode('utf-8'))
         self.input_area.delete('1.0','end')
         
