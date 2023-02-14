@@ -5,11 +5,12 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                sh 'python server.py'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                echo 'Testing Done..'
             }
         }
         stage('Deploy') {
