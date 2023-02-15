@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'python3 server.py'
+                sh 'python3 client.py'
             }
         }
         stage('Test') {
