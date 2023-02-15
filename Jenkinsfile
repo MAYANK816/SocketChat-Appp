@@ -7,7 +7,7 @@ pipeline {
               sh 'python3 --version'
             }
         }
-        stage('Test') {
+        stage('Build') {
             steps {
                 sh 'python3 server.py'
             }
